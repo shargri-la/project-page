@@ -2,26 +2,26 @@ import uuidv1 from 'uuid/v1';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Shargri-La', // e.g: 'Name | Developer'
+  lang: 'jp', // e.g: en, es, fr, jp
+  description: 'A Sharded Blockchain Simulator', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  title: ' ',
+  name: 'Shargri-La',
+  subtitle: 'A Sharded Blockchain Simulator',
+  cta: 'Coming soon',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  img: '',
+  paragraphOne: ' ',
+  paragraphTwo: ' ',
+  paragraphThree: ' ',
+  // resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -65,30 +65,30 @@ export const contactData = {
 // FOOTER DATA
 export const footerData = {
   networks: [
-    {
-      id: uuidv1(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: uuidv1(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: uuidv1(),
-      name: 'linkedin',
-      url: '',
-    },
+    // {
+    //   id: uuidv1(),
+    //   name: 'twitter',
+    //   url: '',
+    // },
+    // {
+    //   id: uuidv1(),
+    //   name: 'codepen',
+    //   url: '',
+    // },
+    // {
+    //   id: uuidv1(),
+    //   name: 'linkedin',
+    //   url: '',
+    // },
     {
       id: uuidv1(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/Shargri-La',
     },
   ],
 };
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
