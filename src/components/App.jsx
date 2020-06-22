@@ -1,32 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import Hero from './Hero/Hero';
 // import About from './About/About';
-// import Projects from './Projects/Projects';
+import Team from './Team/Team';
+import Projects from './Projects/Projects';
 // import Contact from './Contact/Contact';
-// import Footer from './Footer/Footer';
+import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
 
-import { heroData } from '../mock/data';
+import { heroData, teamData, projectsData, footerData } from '../mock/data';
 
 function App() {
   const [hero, setHero] = useState({});
   // const [about, setAbout] = useState({});
-  // const [projects, setProjects] = useState([]);
+  const [team, setTeam] = useState({});
+  const [projects, setProjects] = useState([]);
   // const [contact, setContact] = useState({});
-  // const [footer, setFooter] = useState({});
+  const [footer, setFooter] = useState({});
 
   useEffect(() => {
     setHero({ ...heroData });
     // setAbout({ ...aboutData });
-    // setProjects([...projectsData]);
+    setTeam({ ...teamData });
+    setProjects([...projectsData]);
     // setContact({ ...contactData });
-    // setFooter({ ...footerData });
+    setFooter({ ...footerData });
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero }}>
+    <PortfolioProvider value={{ hero, team, projects, footer }}>
       <Hero />
+      <Team />
+      <Projects />
+      <Footer />
     </PortfolioProvider>
   );
 }
